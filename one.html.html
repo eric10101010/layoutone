@@ -21,13 +21,13 @@
               <h2>個人資料<span>PROFILE</span></h2>
             </div>           
             <div class="infoContent">
-              <p>陳久安 Joanne Chen</p>
-              <p>1997-</p>
-              <p>應屆畢業生/接案設計師/UI設計實習生</p>
-                <br>
-              <p>UI設計修行中/立志當斜槓青年</p>
-              <p>獨立接案，內容涵蓋 :</p>
-              <p>品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。</p>
+              <p>陳久安 Joanne Chen <br>
+                 1997<br>
+                 應屆畢業生/接案設計師/UI設計實習生<br>
+                 UI設計修行中/立志當斜槓青年<br>
+                 獨立接案，內容涵蓋 :<br>
+                 品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。
+              </p>
             </div>
         </div>
         <div class="edu">
@@ -156,7 +156,9 @@
     font: normal normal normal 32px/43px Noto Sans;
     }
 
-  .infoContent , .eduContent p{
+  .infoContent p, .eduContent p{
+    font-size: 24px;
+    line-height: 1.5rem;
     text-align: left;
     font: normal normal normal 24px/36px Noto Sans;
     color: black;
@@ -177,6 +179,9 @@
     color: #000000;
   }
 
+  .infoContent{
+      margin-bottom: 72px;
+  }
   .infoTitle span, .eduTitle span, .workTitle span{
     color: #A00404;
     margin: auto auto auto 16px;
@@ -189,10 +194,6 @@
       padding-bottom: 15px;
   }
   
-  .infoContent{
-      margin-bottom: 72px;
-  }
-
   .photo img {
     margin: 48px 0 48px 0;
     width: 324px;
@@ -236,7 +237,7 @@
     margin-left: 24px;
   }
 
-  .subContent, .bar{
+  .bar{
     text-align: left;
     font: normal normal normal 20px/30px Noto Sans;
     color: #000000;  

@@ -51,162 +51,150 @@ table {
   div {
     display: block;
   }
-  .line {
-    border-top: 1px solid #ffffff;
-    width: 996px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 32px; 
-  }
-  /*外容器*/
-  .wrap {
-      max-width: 1920px;
-      margin: 0 auto;
-  }
-  /*藍色區塊*/
-  .skills, .contact {
-    text-align: center;
-    background-color: #415165 ;
-    font: normal normal Roboto;
-    padding: 34px 0 36px 0;
-    color: #FFFFFF;
-  }
-  /*--文字段落共用--*/
-  .info h2, .edu h2, .work h2{
-    font-size: 32px;
-    color: #000000;
-    text-align: left;
-    font: normal normal normal 32px/43px Noto Sans;
-    }
-
-  .infoContent p, .eduContent p{
-    font-size: 24px;
-    line-height: 1.5rem;
-    text-align: left;
-    font: normal normal normal 24px/36px Noto Sans;
-    color: black;
-  }
-
-  /*個人資料區塊*/  
-  .title h1 {
-    margin-top: 47px;
-    text-align: left;
-    font: normal normal normal 80px/94px Roboto;
-    color: #000000;
-    border-bottom: 2px solid #000000;
-    padding-bottom: 15px;
-  }
-  .title img {
-      padding-top: 48px;
-      padding-bottom: 58px;
-  }
-  .infoTitle span, .eduTitle span, .workTitle span{
-    color: #A00404;
-    margin: auto auto auto 16px;
-    display: inline-block;
-  }
-  .infoContent, .eduContent{
-    text-align: left;
-    font: normal normal normal 24px/36px Noto Sans;
-    color: #000000;
-  }
-  .infoContent{
-      margin-bottom: 82px;
-  }
-   /*刪除hr  改用border-bottom製作底線*/
-  .infoTitle, .eduTitle, .workTitle {
-      margin-bottom: 16px;
-      border-bottom: 1px solid #000;
-      padding-bottom: 15px;
-  }
-
-  .edu , .skills, .work{
-      margin-bottom: 72px;
-  }
-  /*技能區塊*/  
-  .skillTitle h2, .contactTitle h2{
-      margin-left: 16px;
-      font-size: 24px;
-      color: #FFFFFF;
-      margin-bottom: 12px;
-  }
-  .skillTitle span, .contactTitle span{
-      font: normal normal 500 24px/28px Roboto, sans-serif;
-      color: #fff;
-      margin-left: 16px;
-  }
-  .skillLine{
-    border-left: 1px solid #96a9c4;
-    text-align: left;
-    display: inline-block;
-  }
-  .skillLine li{
-    line-height: 28px;
-    margin-left: 24px;
-    margin-bottom: 20px;
-    font: normal normal 300 24px/36px Roboto, sans-serif;
-    color: #ffffff;
-  }
-  /*工作經驗區塊*/  
-  .workContent {
-    margin-left: 24px;
-    border-left: 1px solid #96a9c4;
-  }
-  .workContent h3, .workContent p, .workContent img{
-    margin-left: 24px;
-  }
-  .bar{
-    text-align: left;
-    font: normal normal normal 20px/30px Noto Sans;
-    color: #000000;  
-  }
-  .intern{
-      margin: 15px 0px 8px 0px;
-  }
-  .intern li h3 , .intern li p{
-    padding-top: 24px;
-    font-size: 24px;
-    text-align: left;
-    font: normal normal normal 24px/36px Noto Sans;
-    padding-bottom: 8px;
-  }
-  .intern img {
-    width: 90px;
-    height: 90px;
-    padding-bottom: 8px;
-  }
-  .intern p {
-    font-size: 20px;
-    text-align: left;
-    font: normal normal normal 20px/30px Noto Sans;
-  }
-  .case h3,  .coffee h3{
-    font-size: 24px;
-    text-align: left;
-    font: normal normal normal 24px/36px Noto Sans;
-    padding-top: 24px;
-  }
-  .coffee img {
-    padding: 8px 0;
-  }
-  .coffee p {
-    font-size: 24px;
-    text-align: left;
-    font: normal normal normal 24px/36px Noto Sans;
-  }
-  /*聯絡方式區塊*/  
-  .contactContent li a{
-    color: #fff;
-    text-decoration: none;
-  }
-  .contactContent li {
-    padding-bottom: 16px;
-  }
-  .icon li {
-    display: inline-block;
-    padding: 0 24px;
-  }
-  .icon li img {
-    width: 48px;
-    height: 48px;
-  }
+/*--共用區塊--*/
+.ff-1{
+  font: normal normal 300 24px/36px PingFang TC;
+}
+.ff-2 {
+  font: normal normal medium 24px/36px PingFang TC;
+  font-weight: bold;
+}
+.ff-3{
+  font: normal normal 300 24px/36px PingFang TC;
+  font-weight: bold;
+}
+.p-16{
+  padding: 16px 0;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+.mb-16-24{
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.pb-32 {
+  padding-bottom: 32px;
+}
+.tw{
+  font: normal normal 300 24px/36px PingFang TC;
+  color:#fff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sub-title h2{
+  font-weight: bold;
+  font-size: 32px;
+  font: normal normal medium 32px/48px PingFang TC;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 16px;
+}
+.sub-title h2 span{
+  padding-left: 12px;
+  color: #A00404;
+  font: normal normal 600 24px/29px SF Pro Text;
+}
+.full-title h2{
+  text-align: center;
+  font-size: 32px;
+  font: normal normal medium 32px/45px PingFang TC;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+.full-title span{
+  padding-left: 16px;
+  font: normal normal 600 24px/29px SF Pro Text;
+}
+.block-two{
+  background-color: #415165;
+}
+/*--區塊1--*/
+.profile h1{
+  font: normal normal normal 80px/95px SF Pro Text;
+  border-bottom: 2px solid #000;
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+.profile img{
+  padding: 48px 0;
+}
+/*--區塊2--*/
+.profile-list{
+  margin-bottom: 64px;
+}
+/*--區塊3--*/
+.education {
+  margin-bottom: 72px;
+}
+/*--區塊4--*/
+.skill {
+  font: normal normal 300 24px/36px SF Pro Text;
+  color:#fff;
+  padding: 0 102px;
+  text-align: center;
+  padding-bottom: 52px;
+  margin-bottom: 80px;
+}
+.skill-list {
+  text-align: left;
+  display: inline-block;
+  border-left: 1px solid #96a9c4;
+}
+.skill h2 {
+  margin-bottom: 40px;
+}
+.skill-list li {
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+/*--區塊5--*/
+.work-list{
+  text-align-last: left;
+  margin-top: 16px;
+  margin-left: 24px;
+  padding-left: 24px;
+  border-left: 1px solid #96a9c4;
+  font: normal normal 300 20px/30px PingFang TC;
+}
+.work-list img {
+  width: 89px;
+}
+.work-list h3{
+  padding-bottom: 8px;
+}
+.intern img{
+  width: 72px;
+}
+.intern p{
+  font: normal normal 300 20px/30px PingFang TC;
+}
+/*--區塊6--*/
+.footer {
+  margin-top: 40px;
+  text-align: center;
+}
+.footer-list{
+  padding-top: 32px;
+}
+.footer-list li {
+  padding-bottom: 16px;
+}
+.footer-list li a {
+  text-decoration: none;
+  color:#fff;
+}
+.icon li {
+  margin: auto;
+  display:inline-block;
+}
+.icon li img{
+  padding: 0px 24px;
+  padding-top: 4px;
+  padding-bottom: 48px;
+  width: 48px;
+  background-color: #415165;
+}
